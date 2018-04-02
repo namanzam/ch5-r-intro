@@ -13,20 +13,17 @@ my_height <- 70
 puppies <- 1
 
 # Create a variable `puppy_price`, which is how much you think a puppy costs
-puppy_price <- 200
+puppy_price <- 300
 
 # Create a variable `total_cost` that has the total cost of all of your puppies
-total_cost = puppies * puppy_price
+total_cost <- puppies * puppy_price
 
 # Create a boolean variable `too_expensive`, set to TRUE if the cost is greater 
 # than $1,000
-too_expensive <- FALSE
-if(total_cost > 1000) {
-  too_expenseive <- TRUE
-}
+too_expensive <- total_cost > 1000
 
 # Create a variable `max_puppies`, which is the number of puppies you can 
 # afford for $1,000
-max_puppies <- 1000 / puppy_price
+max_puppies <- 1000 %/% puppy_price
 
 
